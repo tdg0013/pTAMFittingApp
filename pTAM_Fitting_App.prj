@@ -1,0 +1,123 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="2030216096" file="D:\Documents\OneDrive - WVU\OneDrive - West Virginia University\Documents\MATLAB\pTAM App Files\pTAM_Fitting_App.prj" location="D:\Documents\OneDrive - WVU\OneDrive - West Virginia University\Documents\MATLAB\pTAM App Files" name="pTAM_Fitting_App" preferred-package-location="D:\Documents\OneDrive - WVU\OneDrive - West Virginia University\Documents\MATLAB\pTAM App Files\pTAM_Fitting_App\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>pTAM_Fitting_App</param.appname>
+    <param.icon>${PROJECT_ROOT}\pTAM_Fitting_App_resources\icon.ico</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\pTAM_Fitting_App_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\pTAM_Fitting_App_resources\icon_32.png</file>
+      <file>${PROJECT_ROOT}\pTAM_Fitting_App_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\pTAM_Fitting_App_resources\icon_16.png</file>
+    </param.icons>
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>T Gluth</param.authnamewatermark>
+    <param.email />
+    <param.company>Driesschaert Lab, West Virginia University</param.company>
+    <param.summary />
+    <param.description>MATLAB based application for fitting monophsophonated trityl radical EPR spectra and extracting measured values of oxygenation, pH, and inorganic phosphate concentration.</param.description>
+    <param.screenshot>D:\Pictures\LogoMakr-2WINz6b.png</param.screenshot>
+    <param.guid />
+    <param.installpath.string>\pTAM_Fitting_App\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\pTAM_Fitting_App\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\pTAM_Fitting_App\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\pTAM_Fitting_App\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\pTAM_Fitting_App</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>pTAMAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>pTAMAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file>ptam_log</param.log.file>
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text>Syntax 
+	  -? 
+	 
+ Input Arguments 
+	 -?  print help on how to use the application 
+	 input arguments</param.help.text>
+    <unset>
+      <param.version />
+      <param.email />
+      <param.summary />
+      <param.guid />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.target.type />
+      <param.support.packages />
+      <param.no.mcr />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\pTAM_Fitting_App.mlapp</file>
+    </fileset.main>
+    <fileset.resources />
+    <fileset.package>
+      <file>${PROJECT_ROOT}\pTAM_cal.txt</file>
+    </fileset.package>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\eprload1.p</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\pTAM_Fitting_App\for_testing" name="pTAM_Fitting_App.exe" optional="false">D:\Documents\OneDrive - WVU\OneDrive - West Virginia University\Documents\MATLAB\pTAM App Files\pTAM_Fitting_App\for_testing\pTAM_Fitting_App.exe</file>
+      <file location="${PROJECT_ROOT}\pTAM_Fitting_App\for_testing" name="readme.txt" optional="true">D:\Documents\OneDrive - WVU\OneDrive - West Virginia University\Documents\MATLAB\pTAM App Files\pTAM_Fitting_App\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\pTAM_Fitting_App\for_testing" name="splash.png" optional="false">D:\Documents\OneDrive - WVU\OneDrive - West Virginia University\Documents\MATLAB\pTAM App Files\pTAM_Fitting_App\for_testing\splash.png</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>D:\Program Files\MATLAB\R2020a</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
