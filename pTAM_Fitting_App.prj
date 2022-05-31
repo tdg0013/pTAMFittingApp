@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="4239101328" file="C:\Users\tdg0013\OneDrive - West Virginia University\Documents\MATLAB\pTAM App Files\pTAM_Fitting_App.prj" location="C:\Users\tdg0013\OneDrive - West Virginia University\Documents\MATLAB\pTAM App Files" name="pTAM_Fitting_App" preferred-package-location="C:\Users\tdg0013\OneDrive - West Virginia University\Documents\MATLAB\pTAM App Files\pTAM_Fitting_App\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="906206618" file="G:\Shared drives\IMMR_Chem\Lab Notes Data\Teresa\pTAM HOPE71 fitting app\pTAM_Fitting_App.prj" location="G:\Shared drives\IMMR_Chem\Lab Notes Data\Teresa\pTAM HOPE71 fitting app" name="pTAM_Fitting_App" preferred-package-location="G:\Shared drives\IMMR_Chem\Lab Notes Data\Teresa\pTAM HOPE71 fitting app\pTAM_Fitting_App\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>pTAM_Fitting_App</param.appname>
     <param.icon>${PROJECT_ROOT}\pTAM_Fitting_App_resources\icon.ico</param.icon>
     <param.icons>
@@ -8,7 +8,7 @@
       <file>${PROJECT_ROOT}\pTAM_Fitting_App_resources\icon_24.png</file>
       <file>${PROJECT_ROOT}\pTAM_Fitting_App_resources\icon_16.png</file>
     </param.icons>
-    <param.version>1.0</param.version>
+    <param.version>1.1</param.version>
     <param.authnamewatermark>T Gluth</param.authnamewatermark>
     <param.email />
     <param.company>Driesschaert Lab, West Virginia University</param.company>
@@ -29,8 +29,8 @@
     <param.user.defined.mcr.options />
     <param.target.type>subtarget.standalone</param.target.type>
     <param.support.packages />
-    <param.web.mcr>false</param.web.mcr>
-    <param.package.mcr>true</param.package.mcr>
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
     <param.no.mcr>false</param.no.mcr>
     <param.web.mcr.name>pTAMAppInstaller_web</param.web.mcr.name>
     <param.package.mcr.name>pTAMAppInstaller_mcr</param.package.mcr.name>
@@ -48,7 +48,6 @@
 	 -?  print help on how to use the application 
 	 input arguments</param.help.text>
     <unset>
-      <param.version />
       <param.email />
       <param.summary />
       <param.guid />
@@ -63,6 +62,8 @@
       <param.enable.clean.build />
       <param.target.type />
       <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
       <param.no.mcr />
       <param.no.mcr.name />
       <param.windows.command.prompt />
@@ -74,21 +75,22 @@
     <fileset.main>
       <file>${PROJECT_ROOT}\pTAM_Fitting_App.mlapp</file>
     </fileset.main>
-    <fileset.resources />
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\eprload1.m</file>
+      <file>${PROJECT_ROOT}\eprload1.p</file>
+    </fileset.resources>
     <fileset.package>
       <file>${PROJECT_ROOT}\pTAM_cal.txt</file>
     </fileset.package>
-    <fileset.depfun>
-      <file>${PROJECT_ROOT}\eprload1.p</file>
-    </fileset.depfun>
+    <fileset.depfun />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\pTAM_Fitting_App\for_testing" name="splash.png" optional="false">C:\Users\tdg0013\OneDrive - West Virginia University\Documents\MATLAB\pTAM App Files\pTAM_Fitting_App\for_testing\splash.png</file>
-      <file location="${PROJECT_ROOT}\pTAM_Fitting_App\for_testing" name="readme.txt" optional="true">C:\Users\tdg0013\OneDrive - West Virginia University\Documents\MATLAB\pTAM App Files\pTAM_Fitting_App\for_testing\readme.txt</file>
-      <file location="${PROJECT_ROOT}\pTAM_Fitting_App\for_testing" name="pTAM_Fitting_App.exe" optional="false">C:\Users\tdg0013\OneDrive - West Virginia University\Documents\MATLAB\pTAM App Files\pTAM_Fitting_App\for_testing\pTAM_Fitting_App.exe</file>
+      <file location="${PROJECT_ROOT}\pTAM_Fitting_App\for_testing" name="readme.txt" optional="true">G:\Shared drives\IMMR_Chem\Lab Notes Data\Teresa\pTAM HOPE71 fitting app\pTAM_Fitting_App\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\pTAM_Fitting_App\for_testing" name="pTAM_Fitting_App.exe" optional="false">G:\Shared drives\IMMR_Chem\Lab Notes Data\Teresa\pTAM HOPE71 fitting app\pTAM_Fitting_App\for_testing\pTAM_Fitting_App.exe</file>
+      <file location="${PROJECT_ROOT}\pTAM_Fitting_App\for_testing" name="splash.png" optional="false">G:\Shared drives\IMMR_Chem\Lab Notes Data\Teresa\pTAM HOPE71 fitting app\pTAM_Fitting_App\for_testing\splash.png</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2020a</root>
+      <root>D:\Program Files\MATLAB\R2022a</root>
       <toolboxes>
         <toolbox name="matlabcoder" />
       </toolboxes>
